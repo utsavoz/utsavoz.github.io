@@ -1,0 +1,110 @@
+.loader {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1d3557;
+  background-image: linear-gradient(
+      -45deg,
+      #1a2f4d 0%,
+      transparent 25%,
+      transparent 75%,
+      #1a2f4d 100%
+    ),
+    linear-gradient(
+      45deg,
+      #1a2f4d 0%,
+      transparent 25%,
+      transparent 75%,
+      #1a2f4d 100%
+    );
+  z-index: 1000;
+}
+.set {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 0;
+  -webkit-perspective: 1.5in;
+  perspective: 1.5in;
+  -webkit-perspective-origin: 50% 10%;
+  perspective-origin: 50% 10%;
+}
+.set .bar {
+  display: inline-block;
+  height: 45vh;
+  width: 4vw;
+  margin: 0 1.5vw;
+  position: relative;
+}
+.set .bar > figure {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: box-shadow 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, -webkit-transform 250ms ease-out;
+  transition: box-shadow 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out, box-shadow 250ms linear,
+    background-color 250ms linear, border-color 250ms linear;
+  transition: transform 250ms ease-out, box-shadow 250ms linear,
+    background-color 250ms linear, border-color 250ms linear,
+    -webkit-transform 250ms ease-out;
+}
+.set .bar > figure.s {
+  box-shadow: 0 0 0 transparent;
+}
+.set .bar > figure.f {
+  background-color: #1d3557;
+  border-top: 1px solid #1d3557;
+  border-left: 1px solid #1d3557;
+}
+.set .bar > figure.l {
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transform: rotatey(-90deg) scalex(0.0000001);
+  transform: rotatey(-90deg) scalex(0.0000001);
+  border-left: 1px solid transparent;
+  background-color: #1d3557;
+}
+.set .bar > figure.r {
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotatey(90deg) scalex(0.0000001);
+  transform: rotatey(90deg) scalex(0.0000001);
+  border-left: 1px solid transparent;
+  background-color: #1d3557;
+}
+.set .bar.active figure {
+  z-index: 2;
+}
+.set .bar.active figure.s {
+  box-shadow: 3vw 1.5vh 7.5vmin 1vmin rgba(0, 0, 0, 0.5);
+}
+.set .bar.active figure.f {
+  border-color: #25436e;
+  background-color: #203b61;
+  -webkit-transform: translatez(20px);
+  transform: translatez(20px);
+}
+.set .bar.active figure.l {
+  -webkit-transform: translatez(20px) rotatey(-90deg) scalex(0.8);
+  transform: translatez(20px) rotatey(-90deg) scalex(0.8);
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  background-color: #172944;
+  border-left: 1px solid #101e31;
+}
+.set .bar.active figure.r {
+  -webkit-transform: translatez(20px) rotatey(90deg) scalex(0.8);
+  transform: translatez(20px) rotatey(90deg) scalex(0.8);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  background-color: #1e375b;
+  border-right: 1px solid #182c48;
+}
