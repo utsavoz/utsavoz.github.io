@@ -1,0 +1,433 @@
+.case-study {
+  background-color: #c52e28;
+
+  .hero {
+    min-height: initial;
+    align-items: center;
+    justify-content: flex-start;
+
+    .left-arrow {
+      width: 10rem;
+      height: 10rem;
+      backface-visibility: hidden;
+      fill: #f1faee;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .title {
+      font-size: 4rem;
+    }
+
+    .timeline {
+      margin-left: auto;
+    }
+  }
+
+  .video {
+    background-color: #e63946;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+
+    iframe {
+      border: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .brief {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-family: "Integral Regular";
+      text-transform: uppercase;
+      font-size: 2.2rem;
+    }
+
+    .content {
+      display: flex;
+
+      .summary {
+        font-family: "Founders Grotesk Light";
+        margin: 0 100px 0 0;
+        font-size: 1.7rem;
+        text-align: justify;
+        flex: 2;
+      }
+
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .process {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-family: "Integral Regular";
+
+      text-transform: uppercase;
+      font-size: 2.2rem;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+
+      figure {
+        text-align: center;
+        padding-right: 2rem;
+        padding-top: 2rem;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+          margin-bottom: 10px;
+        }
+
+        figcaption {
+          font-size: 1.2rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .solution {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-family: "Integral Regular";
+      text-transform: uppercase;
+      font-size: 2.2rem;
+    }
+
+    .content {
+      display: flex;
+
+      .summary {
+        font-family: "Founders Grotesk Light";
+        text-align: justify;
+        margin: 0 100px 0 0;
+        font-size: 30px;
+        flex: 2;
+      }
+
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e63946;
+  }
+
+  .team {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-family: "Integral Regular";
+      text-transform: uppercase;
+      font-size: 2.2rem;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+
+      figure {
+        text-align: center;
+        padding-right: 2rem;
+        padding-top: 2rem;
+
+        img {
+          width: 15rem;
+          height: 15rem;
+          margin-bottom: 10px;
+        }
+
+        figcaption {
+          text-align: left;
+          text-transform: uppercase;
+
+          .name {
+            font-family: "Integral Regular";
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+          }
+
+          .designation {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 0;
+    .contact {
+      font-family: "Founders Grotesk Light";
+      font-size: 3rem;
+      justify-content: center;
+      border: none;
+    }
+  }
+
+  /******* Estrella case study ********/
+
+  &.estrella {
+    background-color: #a8dadc;
+
+    .hero {
+      .left-arrow {
+        fill: #1d3557;
+      }
+      .title {
+        color: #1d3557;
+      }
+      .timeline {
+        color: #1d3557;
+      }
+    }
+
+    .video {
+      background-color: #a8dadc;
+    }
+
+    .brief {
+      color: #1d3557;
+
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 300px;
+        }
+      }
+    }
+
+    .process {
+      color: #1d3557;
+    }
+
+    .solution {
+      color: #1d3557;
+    }
+
+    .code {
+      background-color: #1d3557;
+    }
+
+    .team {
+      color: #1d3557;
+      .content {
+        justify-content: end;
+      }
+    }
+
+    .footer {
+      color: #1d3557;
+    }
+  }
+
+  /******* Nomad case study ********/
+
+  &.nomad {
+    background-color: #f1faee;
+
+    .hero {
+      .left-arrow {
+        fill: #1d3557;
+      }
+      .title {
+        color: #1d3557;
+      }
+      .timeline {
+        color: #1d3557;
+      }
+    }
+
+    .video {
+      background-color: #a8dadc;
+    }
+
+    .brief {
+      color: #1d3557;
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 300px;
+        }
+      }
+    }
+
+    .process {
+      color: #1d3557;
+    }
+
+    .solution {
+      color: #1d3557;
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 200px;
+        }
+      }
+    }
+
+    .code {
+      background-color: #1d3557;
+    }
+
+    .team {
+      color: #1d3557;
+    }
+
+    .footer {
+      color: #1d3557;
+    }
+  }
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+    .hero {
+      min-height: 20vh;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .left-arrow {
+        width: 4rem;
+        height: 4rem;
+        transform: rotate(-45deg);
+        position: initial;
+      }
+
+      .title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .timeline {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+
+    .brief {
+      padding: 1rem;
+
+      .heading {
+        font-size: 2rem;
+      }
+
+      .content {
+        flex-direction: column-reverse;
+
+        .summary {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+
+        .img {
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .process {
+      padding: 1rem;
+
+      .heading {
+        font-size: 2rem;
+      }
+
+      .content {
+        overflow-x: auto;
+        justify-content: flex-start;
+      }
+    }
+
+    .solution {
+      padding: 1rem;
+
+      .heading {
+        font-size: 2rem;
+      }
+
+      .content {
+        flex-direction: column-reverse;
+
+        .summary {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+
+        .img {
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .team {
+      padding: 1rem;
+
+      .heading {
+        font-size: 2rem;
+      }
+
+      .content {
+        overflow-x: auto;
+        justify-content: flex-start;
+      }
+    }
+
+    .footer {
+      .contact {
+        padding: 1.4rem 0 1rem 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
