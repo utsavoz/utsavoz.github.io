@@ -1,0 +1,1977 @@
+/* Put your global styles here */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+       ========================================================================== */
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+body {
+  margin: 0;
+}
+
+/**
+     * Add the correct display in IE 9-.
+     */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     * 1. Add the correct display in IE.
+     */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+     * Add the correct margin in IE 8.
+     */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+       ========================================================================== */
+/**
+     * 1. Remove the gray background on active links in IE 10.
+     * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+     */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+     * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+     * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+     */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+     * Add the correct font style in Android 4.3-.
+     */
+dfn {
+  font-style: italic;
+}
+
+/**
+     * Add the correct background and color in IE 9-.
+     */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+     * Add the correct font size in all browsers.
+     */
+small {
+  font-size: 80%;
+}
+
+/**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+     * Add the correct display in iOS 4-7.
+     */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+     * Remove the border on images inside links in IE 10-.
+     */
+img {
+  border-style: none;
+}
+
+/**
+     * Hide the overflow in IE.
+     */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+       ========================================================================== */
+/**
+     * 1. Change the font styles in all browsers (opinionated).
+     * 2. Remove the margin in Firefox and Safari.
+     */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
+     */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+     * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+     *    controls in Android 4.
+     * 2. Correct the inability to style clickable types in iOS and Safari.
+     */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+     * Remove the inner border and padding in Firefox.
+     */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+     * Restore the focus styles unset by the previous rule.
+     */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+     * Correct the padding in Firefox.
+     */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+     * 1. Add the correct display in IE 9-.
+     * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+     * Remove the default vertical scrollbar in IE.
+     */
+textarea {
+  overflow: auto;
+}
+
+/**
+     * 1. Add the correct box sizing in IE 10-.
+     * 2. Remove the padding in IE 10-.
+     */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+     * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+     */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+       ========================================================================== */
+/*
+     * Add the correct display in IE 9-.
+     * 1. Add the correct display in Edge, IE, and Firefox.
+     */
+details,
+menu {
+  display: block;
+}
+
+/*
+     * Add the correct display in all browsers.
+     */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+canvas {
+  display: inline-block;
+}
+
+/**
+     * Add the correct display in IE.
+     */
+template {
+  display: none;
+}
+
+/* Hidden
+       ========================================================================== */
+/**
+     * Add the correct display in IE 10-.
+     */
+[hidden] {
+  display: none;
+}
+
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+/*
+     * What follows is the result of much research on cross-browser styling.
+     * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+     * Kroc Camen, and the H5BP dev community and team.
+     */
+/* ==========================================================================
+       Base styles: opinionated defaults
+       ========================================================================== */
+/*
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Vendor-prefixed and regular ::selection selectors cannot be combined:
+     * https://stackoverflow.com/a/16982510/7133471
+     *
+     * Customize the background color to match your design.
+     */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+     * A better looking default horizontal rule
+     */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+     * Remove default fieldset styles.
+     */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+     * Allow only vertical resizing of textareas.
+     */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+       Browser Upgrade Prompt
+       ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+       Helper classes
+       ========================================================================== */
+/*
+     * Hide visually and from screen readers
+     */
+.hidden {
+  display: none !important;
+}
+
+/*
+     * Hide only visually, but have it available for screen readers:
+     * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     *
+     * 1. For long content, line feeds are not interpreted as spaces and small width
+     *    causes content to wrap 1 word per line:
+     *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+     */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+/*
+     * Extends the .visuallyhidden class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+     * Hide visually and from screen readers, but maintain layout
+     */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       http://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+         * Don't show links that are fragment identifiers,
+         * or use the `javascript:` pseudo protocol
+         */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+         * Printing Tables:
+         * http://css-discuss.incutio.com/wiki/Printing_Tables
+         */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*
+     * The MIT License
+     * Copyright (c) 2012 Matias Meno <m@tias.me>
+     */
+.dropzone,
+.dropzone * {
+  box-sizing: border-box;
+}
+
+.dropzone {
+  position: relative;
+}
+
+.dropzone .dz-preview {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  margin: 0.5em;
+}
+
+.dropzone .dz-preview .dz-progress {
+  display: block;
+  height: 15px;
+  border: 1px solid #aaa;
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: green;
+}
+
+.dropzone .dz-preview .dz-error-message {
+  color: red;
+  display: none;
+}
+
+.dropzone .dz-preview.dz-error .dz-error-message,
+.dropzone .dz-preview.dz-error .dz-error-mark {
+  display: block;
+}
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+  display: block;
+}
+
+.dropzone .dz-preview .dz-error-mark,
+.dropzone .dz-preview .dz-success-mark {
+  position: absolute;
+  display: none;
+  left: 30px;
+  top: 30px;
+  width: 54px;
+  height: 58px;
+  left: 50%;
+  margin-left: -27px;
+}
+
+@font-face {
+  font-family: "MIUMIU";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Miumiu/MIUMIUHEAVY.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Durk";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Durk/Druk\ Wide\ Bold.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "IntegralCF";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/integral-cf/IntegralCF-Regular.otf");
+}
+
+@font-face {
+  font-family: "FoundersGrotesk";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FoundersGroteskReg";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "FoundersGroteskBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ogg";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ogg/Ogg Roman.ttf");
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: FoundersGrotesk, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
+.opencall {
+  font-family: "IntegralCF";
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.opencall .rrl {
+  font-family: "IntegralCF";
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.opencall sup {
+  font-size: 1.15rem;
+}
+
+nav a,
+nav .fe {
+  font-family: "FoundersGrotesk";
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.project {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.project-carousel {
+  position: relative;
+}
+.project-carousel .track {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(calc(-25% + 20vw), 0, 0);
+  animation: marquee 20s linear infinite;
+  opacity: 1;
+  height: 24rem;
+}
+.project-carousel .track video {
+  height: 100%;
+}
+.project-carousel:before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(calc(-25% + 20vw), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-50% + 20vw), 0, 0);
+  }
+}
+.baseline,
+.formtitle,
+.thanks,
+footer .social a {
+  font-family: IntegralCF;
+  text-transform: uppercase;
+}
+
+.submit{
+  font-family: MIUMIU;
+  text-transform: uppercase;
+}
+
+footer .social a {
+  font-family: IntegralCF;
+  text-transform: uppercase;
+}
+
+#opencall .left,
+#contact .left {
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+  line-height: 1.8rem;
+  padding-top: 25px;
+}
+
+#contact .middle,
+#contact .right {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.rule {
+  font-family: "FoundersGrotesk";
+}
+
+.rule .label {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.rule .label span {
+  font-family: Ogg;
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 3rem;
+  -webkit-text-fill-color: #233454;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f1faee;
+}
+
+.rule .info {
+  font-size: 1.5rem;
+}
+
+.rule .info span {
+  font-family: FoundersGroteskBold;
+}
+
+.submit {
+  font-size: 4vw;
+}
+
+.formtitle {
+  font-size: 3.33vw;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  line-height: 0.95rem;
+}
+
+.dropzone .dz-error-mark,
+.dropzone .dz-success-mark {
+  font-family: "Ogg";
+  font-size: 7rem;
+}
+
+.dropzone .dz-error-message,
+.dropzone .dz-filename,
+.dropzone .dz-size {
+  text-transform: uppercase;
+  font-family: "FoundersGroteskBold";
+}
+
+.errors {
+  font-family: "FoundersGrotesk";
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+input[type="text"] {
+  font-family: FoundersGroteskBold;
+  text-transform: uppercase;
+}
+
+textarea {
+  font-family: FoundersGroteskBold;
+}
+
+.credits {
+  font-family: IntegralCF;
+  line-height: 1rem;
+}
+
+section.regular {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+section.regular h2 {
+  font-family: IntegralCF;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3rem;
+  word-break: break-word;
+}
+
+section.regular .event .info,
+section.regular .member .name {
+  font-family: FoundersGrotesk;
+}
+
+section.regular .bio,
+section.regular .url {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+section.regular .lr .join {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+section.regular .lr .join span {
+  font-family: Ogg;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3rem;
+  -webkit-text-fill-color: #233454;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f1faee;
+}
+
+section.regular .lr .r {
+  text-transform: uppercase;
+}
+
+section.regular .lr .r .looking span,
+section.regular .lr .r .looking a {
+  font-family: FoundersGroteskBold;
+}
+
+section.regular .lr .looking {
+  line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 55em) {
+  .opencall {
+    font-size: 1.5rem;
+  }
+  .opencall sup {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 35em) {
+  .opencall {
+    font-size: 1rem;
+  }
+  .opencall sup {
+    font-size: 0.5rem;
+  }
+  #opencall .left,
+  #contact .left {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  #contact .right {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  nav a,
+  nav .fe {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  #contact .left,
+  #contact .right {
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+  }
+}
+
+/* Put your layout here */
+nav ul {
+  display: flex;
+}
+
+.m-logo {
+  display: none;
+  position: fixed;
+  top: 14px;
+  left: 10px;
+  z-index: 12344;
+}
+
+.m-video {
+  display: none;
+}
+
+.thanks-page .m-video {
+  display: block;
+}
+
+.intro,
+.opencall,
+.baseline,
+section,
+.formtitle {
+  padding: 40px;
+}
+
+.intro {
+  background-color: #233454;
+  width: calc(100% - 80px);
+  padding-bottom: 10px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.intro video {
+  width: 90%;
+  -webkit-mask-box-image: url(/public/img/Ozlogonew.svg);
+}
+
+.intro img {
+  width: auto;
+  margin: 0 auto;
+}
+
+header.header {
+  background: #233454;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 123;
+}
+
+.opencall {
+  padding-bottom: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opencall .m {
+  display: none;
+}
+
+.opencall .rr {
+  width: 65%;
+  text-align: right;
+}
+
+.baseline {
+  margin: 20px 0 30px 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding: 0;
+}
+
+.baseline img {
+  width: 100%;
+}
+
+main {
+  background-color: #233454;
+  z-index: 0;
+}
+
+.home main {
+  margin-bottom: 400px;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .left {
+  width: calc(40% - 40px);
+}
+
+section .right {
+  width: calc(60% - 40px);
+}
+
+#opencall .right {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.left ul,
+.right ul {
+  margin-left: 60px;
+  margin-right: 30px;
+}
+
+.left ul li,
+.right ul li {
+  padding-left: 20px;
+}
+
+.rule {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.rule .label {
+  min-width: 7rem;
+  padding-right: 20px;
+}
+
+.rule .label span {
+  display: block;
+}
+
+.submit {
+  display: block;
+  text-decoration: none;
+  border: 2px solid #f1faee;
+  border-radius: 100px;
+  padding: 40px 20px 45px 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.submit:hover {
+  background: #f1faee;
+  color: #233454;
+}
+
+.submit.submitting {
+  opacity: 0.25;
+}
+
+#form,
+.formtitle {
+  display: none;
+}
+
+#form {
+  margin-bottom: 30px;
+}
+
+#form form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#form form .left {
+  position: relative;
+}
+
+#form form .left .label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#form form .left .instructions {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  margin-left: 40px;
+}
+
+#form form .dz-default,
+#form form .dz-message {
+  order: 0;
+  border: 1px solid #f1faee;
+  border-radius: 20px;
+}
+
+#form form .right {
+  order: 1;
+}
+
+#form form .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#form form .row .col {
+  width: calc(100% - 20px);
+}
+
+#form form .row .col.single {
+  width: 100%;
+}
+
+#form form label {
+  display: block;
+}
+
+#form form input,
+#form form textarea {
+  background: transparent;
+  border: 1px solid #f1faee;
+  border-radius: 20px;
+  width: calc(100% - 20px) !important;
+  padding: 10px;
+  color: #f1faee;
+}
+
+#form form input.error,
+#form form textarea.error {
+  background-color: #f1faee;
+  color: #233454;
+}
+
+#form form textarea {
+  height: 200px;
+}
+
+#form form input[type="submit"],
+#form form .submit {
+  color: #f1faee;
+  padding: 5px 5px 10px 5px;
+  margin-bottom: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.thanks {
+  padding: 40px;
+  margin: 40px 0 20px 0;
+}
+
+.dropzone .dropzone-previews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropzone .dz-preview {
+  width: auto;
+  width: calc(50% - 30px);
+  margin: 15px !important;
+}
+
+.dropzone .dz-filename {
+  word-break: break-all;
+}
+
+.dropzone .dz-progress {
+  display: none;
+}
+
+.dropzone .dz-error-mark {
+  top: 30px !important;
+  left: 20% !important;
+}
+
+.errors .msg {
+  position: fixed;
+  width: calc(100% - 40px);
+  text-align: center;
+  background-color: #f1faee;
+  color: #233454;
+  top: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  z-index: 1234;
+}
+
+.errors .msg a {
+  color: #233454;
+}
+
+.errors .msg .error {
+  margin: 10px 0;
+}
+
+section.regular {
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+section.regular h2 {
+  margin: 0;
+}
+
+section.regular .r-intro {
+  max-width: 50%;
+}
+
+section.regular .lr {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.regular .lr .l,
+section.regular .lr .r {
+  width: calc(50% - 20px);
+}
+
+section.regular .lr .r {
+  display: flex;
+  margin-top: 20px;
+}
+
+section.regular .lr .r a {
+  text-decoration: none;
+}
+
+section.regular .lr .r .join {
+  font-family: IntegralCF;
+  min-width: 200px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+section.regular .lr .r .join span {
+  display: block;
+  margin-bottom: -10px;
+}
+
+section.regular .lr .r .looking {
+  width: 60%;
+}
+
+.programme-list .event {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-top: 1px solid #f1faee;
+  padding: 12px 0 10px 0;
+}
+
+.programme-list .event .title {
+  width: 30%;
+  padding-right: 10px;
+  font-family: FoundersGroteskBold;
+}
+
+.programme-list .event .date {
+  width: 20%;
+}
+
+.programme-list .event .info {
+  width: 70%;
+  margin-top: -3px;
+}
+
+section.regular .event .info span {
+  font-family: FoundersGroteskReg;
+}
+
+.programme-list .event:last-child {
+  border-bottom: 1px solid #f1faee;
+}
+
+.jury-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.jury-list .member {
+  width: calc(25% - 20px);
+  border-top: 1px solid #f1faee;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.jury-list .member .name {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.jury-list .member .url {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.jury-list .member a {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.partner-list {
+  display: flex;
+}
+
+#contact {
+  flex-wrap: wrap;
+}
+
+#contact .left {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contact .left div {
+  width: calc(50% - 20px);
+  word-break: break-word;
+}
+
+#contact .right .mc-field-group {
+  display: flex;
+  width: 100%;
+  border: 1px solid #233454;
+  border-radius: 20px;
+}
+
+#contact .right .mc-field-group input {
+  background-color: transparent;
+  border: none;
+  color: #233454;
+}
+
+#contact .right .mc-field-group input[type="text"],
+#contact .right .mc-field-group input[type="email"] {
+  width: calc(100% - 40px);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#contact .right .mc-field-group input[type="submit"] {
+  width: 40px;
+  padding: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+footer .lower {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer .lower a {
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+footer .credits {
+  margin-top: 6px;
+  display: flex;
+}
+
+footer .credits a:hover {
+  color: #233454;
+}
+
+.thanks-page header.header,
+.thanks-page footer.footer {
+  display: none;
+}
+
+@media only screen and (max-width: 55em) {
+  .intro img {
+    height: calc(100vh - 350px);
+  }
+  .opencall > div {
+    padding-top: 10px;
+  }
+  .opencall .r {
+    /* display: none; */
+  }
+  .opencall .m {
+    display: block;
+  }
+  section,
+  #form form {
+    flex-direction: column;
+  }
+  section .left,
+  section .right,
+  #form form .left,
+  #form form .right {
+    width: 100%;
+  }
+  #opencall {
+    margin-bottom: 40px;
+  }
+  #form form .left {
+    margin-bottom: 40px;
+  }
+  #form form .left .instructions {
+    position: relative;
+    bottom: 0;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  #form form .left .label {
+    position: relative;
+    top: 30px;
+  }
+  #form form .right .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #form form .right .row .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #form form .right input[type="submit"] {
+    margin-top: 0;
+  }
+  #form form input,
+  #form form textarea {
+    width: 100% !important;
+  }
+  section.regular .r-intro {
+    max-width: 100%;
+  }
+  section.regular .lr {
+    flex-direction: column;
+  }
+  section.regular .lr .l,
+  section.regular .lr .r {
+    width: 100%;
+    flex-direction: column;
+  }
+  section.regular .lr .l .join,
+  section.regular .lr .l .looking,
+  section.regular .lr .r .join,
+  section.regular .lr .r .looking {
+    margin: 0;
+    width: 100%;
+  }
+  .programme-list .event {
+    flex-direction: column;
+  }
+  .programme-list .event div {
+    width: 100% !important;
+  }
+  .programme-list .event .title {
+    padding-right: 0 !important;
+  }
+  .jury-list .member {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 35em) {
+  .m-logo,
+  .m-video {
+    display: block;
+  }
+  video {
+    display: none;
+  }
+  .intro,
+  .opencall,
+  .baseline,
+  section,
+  .formtitle {
+    padding: 10px;
+  }
+  .intro {
+    padding-top: 30px;
+    padding-bottom: 0;
+    width: calc(100% - 20px);
+  }
+  .baseline {
+    border-top: 1px solid #f1faee;
+    border-bottom: 1px solid #f1faee;
+  }
+  .opencall {
+    padding-bottom: 10px;
+  }
+  .baseline {
+    margin: 0;
+  }
+  .scrolling .opencall {
+    padding-top: 30px;
+  }
+  #opencall {
+    padding-top: 0;
+  }
+  .rule {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .rule .label,
+  .rule .info {
+    width: 100%;
+    min-width: 0;
+  }
+  .rule .label {
+    margin-bottom: 10px;
+  }
+  .jury-list .member {
+    width: 100%;
+  }
+  .jury-list .member .img img {
+    width: 100%;
+  }
+  #contact {
+    padding: 20px 10px;
+  }
+  .al.submit {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #233454;
+    z-index: 123;
+  }
+  .form-open .al.submit {
+    display: none;
+  }
+  footer .lower {
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 20px 0;
+  }
+  footer .credits {
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 20px 0;
+  }
+}
+
+nav {
+  border-top: 1px solid #f1faee;
+  border-bottom: 1px solid #f1faee;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px 40px 9px 40px;
+}
+
+nav a,
+nav .fe {
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+  display: block;
+  opacity: 0.75;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+nav a:before,
+nav .fe:before {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #f1faee;
+}
+
+nav a.active,
+nav a:hover:not(.inactive),
+nav .fe.active,
+nav .fe:hover:not(.inactive) {
+  opacity: 1;
+}
+
+nav a.active:before,
+nav a:hover:not(.inactive):before,
+nav .fe.active:before,
+nav .fe:hover:not(.inactive):before {
+  background-color: #f1faee;
+}
+
+nav a.inactive,
+nav .fe.inactive {
+  opacity: 0.25;
+  position: relative;
+}
+
+nav a.inactive:hover,
+nav .fe.inactive:hover {
+  opacity: 1;
+  color: #233454;
+}
+
+nav a.inactive:hover:before,
+nav .fe.inactive:hover:before {
+  opacity: 0;
+}
+
+nav a.inactive:hover:after,
+nav .fe.inactive:hover:after {
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  color: #f1faee;
+  background: #233454;
+  content: "Didnt you see that already?";
+  display: block;
+  font-family: "IntegralCF";
+}
+
+.m-menu {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  display: none;
+  z-index: 12345;
+}
+
+.m-menu .mm {
+  border: none;
+  background: none;
+  color: #f1faee;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.m-menu .mm:before,
+.m-menu .mm:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 14px;
+  height: 2px;
+  left: 18px;
+  top: 19px;
+  background-color: #f1faee;
+  transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  opacity: 0;
+}
+
+.m-menu .mm:after {
+  top: 27px;
+}
+
+.m-menu-open .m-menu .mm {
+  width: 90px;
+}
+
+.m-menu-open .m-menu .mm:before {
+  left: auto;
+  right: 0;
+  top: 24px;
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+
+.m-menu-open .m-menu .mm:after {
+  left: auto;
+  right: 0;
+  opacity: 1;
+  top: 24px;
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 35em) {
+  nav ul {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .m-menu {
+    display: block;
+  }
+  .m-menu-open .nav {
+    display: block;
+    width: 100%;
+    position: sticky;
+    padding-top: 20px;
+    background: #233454;
+    border-top: none;
+    border-bottom: none;
+  }
+  .m-menu-open .nav ul {
+    flex-direction: column;
+    padding-bottom: 300px;
+  }
+  .m-menu-open .nav ul a,
+  .m-menu-open .nav ul .fe {
+    display: block;
+    margin: 0 0 20px 0;
+    padding-left: 30px;
+  }
+  .m-menu-open .nav ul a:before,
+  .m-menu-open .nav ul .fe:before {
+    top: 6px;
+    transform: scale(1.5);
+  }
+  .m-menu-open .nav ul a.inactive:after,
+  .m-menu-open .nav ul .fe.inactive:after {
+    left: 0;
+    right: 0;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+body {
+  background-color: #233454;
+  color: #f1faee;
+  overflow-x: hidden;
+}
+
+a {
+  color: #f1faee;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.active,
+a:hover {
+  color: #f1faee;
+}
+
+#contact,
+footer {
+  background-color: #f1faee;
+  color: #233454;
+}
+
+#contact a,
+footer a {
+  color: #233454;
+}
+
+footer .social a:hover {
+  color: #233454;
+}
+
+.arrow {
+  background-image: url(../img/arrow.svg);
+  font-size: 0;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.pointer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  --size-small: 25px;
+  --size-large: 70px;
+}
+.pointer-outer {
+  border: 2px solid #f1faee;
+  z-index: 12000;
+  opacity: 0.25;
+  width: var(--size-small);
+  height: var(--size-small);
+  transition: width 0.3s, height 0.3s, margin 0.3s, opacity 0.3s,
+    border-width 0.3s;
+}
+.pointer-outer.is-hover {
+  border-width: 2px;
+  width: var(--size-large);
+  height: var(--size-large);
+  margin-top: calc((var(--size-large) - var(--size-small)) / 2 * -1);
+  margin-left: calc((var(--size-large) - var(--size-small)) / 2 * -1);
+  opacity: 0.35;
+}
+.pointer-inner {
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  z-index: 11000;
+  background: #f1faee;
+  opacity: 1;
+  transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s, opacity 0.3s;
+}
+.pointer-inner.is-hover {
+  opacity: 0.35;
+}
+body:not(.cursor-hidden) .pointer-inner {
+  visibility: hidden;
+}
