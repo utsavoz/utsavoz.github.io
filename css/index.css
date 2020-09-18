@@ -327,11 +327,12 @@ body {
     body.loading .loader {
       display: initial; }
     body.loading .row {
-      background: #1d3557;
+      background: #457b9d;
       height: 10vh;
       width: 100%;
-      animation: fade 5s infinite;
-      animation-direction: alternate; }
+      animation: fade 5s;
+      animation-direction: normal;
+      animation-delay: 200ms; }
     body.loading .row-2 {
       animation-delay: 0.5s; }
     body.loading .row-3 {
