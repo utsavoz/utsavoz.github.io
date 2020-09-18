@@ -317,19 +317,50 @@ h6,
 * {
   box-sizing: border-box; }
 
-body.cursor-hidden,
-body.cursor-hidden * {
-  cursor: none !important; }
+body {
+  overflow-x: hidden; }
+  body.cursor-hidden,
+  body.cursor-hidden * {
+    cursor: none !important; }
+  body.loading {
+    overflow-y: hidden; }
+    body.loading .loader {
+      display: initial; }
+    body.loading .row {
+      background: #1d3557;
+      height: 10vh;
+      width: 100%;
+      animation: fade 5s infinite;
+      animation-direction: alternate; }
+    body.loading .row-2 {
+      animation-delay: 0.5s; }
+    body.loading .row-3 {
+      animation-delay: 1s; }
+    body.loading .row-4 {
+      animation-delay: 1.5s; }
+    body.loading .row-5 {
+      animation-delay: 2s; }
+    body.loading .row-6 {
+      animation-delay: 2.5s; }
+    body.loading .row-7 {
+      animation-delay: 3s; }
+    body.loading .row-8 {
+      animation-delay: 3.5s; }
+    body.loading .row-9 {
+      animation-delay: 4s; }
+    body.loading .row-10 {
+      animation-delay: 4.5s; }
 
-body.loading .loader {
-  display: initial; }
-
-body.loaded .loader {
-  display: none; }
+@keyframes fade {
+  from {
+    background: #457b9d; }
+  to {
+    background: #1d3557; } }
+  body.loaded .loader {
+    display: none; }
 
 html,
 body {
-  overflow-x: hidden;
   min-height: 100%;
   font-family: "Founders Grotesk", sans-serif;
   margin: 0;
