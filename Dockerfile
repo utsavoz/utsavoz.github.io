@@ -7,5 +7,5 @@ COPY server.js ./
 
 COPY public/ public/
 EXPOSE 80
-WORKDIR public/
+
 CMD [ "node", "server.js" ]
