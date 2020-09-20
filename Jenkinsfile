@@ -20,7 +20,7 @@ pipeline {
 		sh "sudo docker push utsavoz/magnum_opus"
 	  }
 	 steps {
-		sshagent(credentials : ['utsav-pem']) {
+		sshagent(credentials : ['pranav_mac_ssh']) {
 			sh "echo pwd"
 			sh 'ssh -t -t root@165.22.207.218 -o StrictHostKeyChecking=no "deploy.sh"'
 		}
