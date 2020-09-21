@@ -1,3 +1,5 @@
+
+
 // Custom Pointer Variables --- Starts Here
 const outerCursor = document.querySelector(".pointer-outer");
 const innerCursor = document.querySelector(".pointer-inner");

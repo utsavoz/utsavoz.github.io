@@ -10,6 +10,7 @@
   "author": "Ankit Karnany <ankitkarnany@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
     "express": "^4.17.1",
     "node-sass": "^4.10.0",
     "package.json": "^2.0.1"
