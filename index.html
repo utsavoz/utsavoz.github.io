@@ -351,11 +351,17 @@
         "../img/index/nomad_4.mp4",
       ]);
 
-      preload.onprogress = (event) => {
-        window.setTimeout(function () {
+      preload.oncomplete = (event) => {
+        if (localStorage.getItem("preloaded") != "si") {
+          window.setTimeout(function () {
+            document.querySelector("body").classList.remove("loading");
+            document.querySelector("body").classList.add("loaded");
+            localStorage.setItem("preloaded", "si");
+          }, 5000);
+        } else {
           document.querySelector("body").classList.remove("loading");
           document.querySelector("body").classList.add("loaded");
-        }, 5000);
+        }
       };
     })();
   </script>
