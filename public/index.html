@@ -32,14 +32,19 @@
     <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="Personal Portfolio Website" />
     <meta name="author" content="Utsav Oza" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNY21X1Y00"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CNY21X1Y00"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-CNY21X1Y00');
+      gtag("config", "G-CNY21X1Y00");
     </script>
 
     <title>Oz's Magnum Opus</title>
@@ -50,16 +55,10 @@
 
   <body class="loading" id="top">
     <div class="loader">
-      <div class="row-1 row"></div>
-      <div class="row-2 row"></div>
-      <div class="row-3 row"></div>
-      <div class="row-4 row"></div>
-      <div class="row-5 row"></div>
-      <div class="row-6 row"></div>
-      <div class="row-7 row"></div>
-      <div class="row-8 row"></div>
-      <div class="row-9 row"></div>
-      <div class="row-10 row"></div>
+      <div class="hourglass">
+        <div class="sand"></div>
+        <div class="stream"></div>
+      </div>
     </div>
     <div class="pointer pointer-outer small"></div>
     <div class="pointer pointer-inner"></div>
@@ -359,7 +358,7 @@
         "../img/index/nomad_3.mp4",
         "../img/index/nomad_4.mp4",
       ]);
-      
+
       if (localStorage.getItem("preloaded") != "si") {
         window.setTimeout(function () {
           document.querySelector("body").classList.remove("loading");

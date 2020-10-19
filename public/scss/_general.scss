@@ -26,62 +26,290 @@ body {
   overflow-x: hidden;
 
   &.loading {
+    overflow-y: hidden;
+
     .loader {
       display: initial;
-    }
-
-    overflow-y: hidden;
-    .row {
       background: #457b9d;
-      height: 10vh;
+      height: 100vh;
       width: 100%;
-      animation: fade 6s;
-      animation-direction: normal;
-      // animation-delay: 200ms;
-    }
 
-    .row-2 {
-      animation-delay: 0.5s;
-    }
-
-    .row-3 {
-      animation-delay: 1s;
-    }
-
-    .row-4 {
-      animation-delay: 1.5s;
-    }
-
-    .row-5 {
-      animation-delay: 2s;
-    }
-
-    .row-6 {
-      animation-delay: 2.5s;
-    }
-
-    .row-7 {
-      animation-delay: 3s;
-    }
-
-    .row-8 {
-      animation-delay: 3.5s;
-    }
-
-    .row-9 {
-      animation-delay: 4s;
-    }
-
-    .row-10 {
-      animation-delay: 4.5s;
-    }
-
-    @keyframes fade {
-      from {
-        background: #457b9d;
+      .hourglass {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -25px 0 0 -25px;
+        height: 100px;
+        width: 50px;
+        background: #edf2f4;
+        -webkit-animation: 5s glass infinite ease-in;
+        -moz-animation: 5s glass infinite ease-in;
+        -o-animation: 5s glass infinite ease-in;
+        -ms-animation: 5s glass infinite ease-in;
+        animation: 5s glass infinite ease-in;
       }
-      to {
-        background: #1d3557;
+      .hourglass:before,
+      .hourglass:after {
+        content: "";
+      }
+      .hourglass:after {
+        position: absolute;
+        top: 40px;
+        left: -5px;
+        width: 0;
+        height: 0;
+        border-width: 30px;
+        border-style: solid;
+        border-color: transparent #457b9d;
+        margin: -20px 0 0;
+      }
+      .hourglass:before {
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: #ef233c;
+        -webkit-animation: 5s sand infinite ease-in;
+        -moz-animation: 5s sand infinite ease-in;
+        -o-animation: 5s sand infinite ease-in;
+        -ms-animation: 5s sand infinite ease-in;
+        animation: 5s sand infinite ease-in;
+        -webkit-transform-origin: bottom;
+        -moz-transform-origin: bottom;
+        -o-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+        transform-origin: bottom;
+      }
+      .hourglass .sand {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: #ef233c;
+        -webkit-animation: 5s bottomsand infinite ease-in;
+        -moz-animation: 5s bottomsand infinite ease-in;
+        -o-animation: 5s bottomsand infinite ease-in;
+        -ms-animation: 5s bottomsand infinite ease-in;
+        animation: 5s bottomsand infinite ease-in;
+        -webkit-transform-origin: bottom;
+        -moz-transform-origin: bottom;
+        -o-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+        transform-origin: bottom;
+      }
+      .hourglass .stream {
+        position: absolute;
+        left: 49%;
+        right: 49%;
+        top: 50%;
+        bottom: 0;
+        background: #ef233c;
+      }
+      @-moz-keyframes glass {
+        0%,
+        80% {
+          -webkit-transform: rotate(0);
+          -moz-transform: rotate(0);
+          -o-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+      @-webkit-keyframes glass {
+        0%,
+        80% {
+          -webkit-transform: rotate(0);
+          -moz-transform: rotate(0);
+          -o-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+      @-o-keyframes glass {
+        0%,
+        80% {
+          -webkit-transform: rotate(0);
+          -moz-transform: rotate(0);
+          -o-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+      @keyframes glass {
+        0%,
+        80% {
+          -webkit-transform: rotate(0);
+          -moz-transform: rotate(0);
+          -o-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+      @-moz-keyframes sand {
+        0% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+      }
+      @-webkit-keyframes sand {
+        0% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+      }
+      @-o-keyframes sand {
+        0% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+      }
+      @keyframes sand {
+        0% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+      }
+      @-moz-keyframes bottomsand {
+        0% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes bottomsand {
+        0% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @-o-keyframes bottomsand {
+        0% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes bottomsand {
+        0% {
+          -webkit-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+        80%,
+        100% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
       }
     }
   }

@@ -28,6 +28,6 @@ app.get('/case-study-3', function(req,res){
 });
 
 const server = http.createServer(app);
-const port = 80;
+const port = 8080;
 server.listen(port);
 console.debug('Server listening on port ' + port);
