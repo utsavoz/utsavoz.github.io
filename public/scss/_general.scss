@@ -330,25 +330,31 @@ body {
   color: #f1faee;
 }
 
+nav {
+  height: 3.125rem;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+
+    a {
+      text-decoration: none;
+      padding-left: 2rem;
+      color: #f1faee;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+  }
+}
+
 .hero {
   min-height: 60vh;
   margin: 0;
-  padding: 3rem;
-  line-height: 1;
-  color: #f1faee;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  .title {
-    font-family: "Integral Regular";
-    font-size: 5rem;
-  }
-
-  .timeline {
-    font-family: "Ogg Roman";
-    font-size: 7rem;
-  }
+  padding: 40px;
+  background-image: url("../img/index/hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .project {
@@ -762,9 +768,11 @@ body {
   }
 
   .scroll-top {
-    padding: 30px 40px;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    height: 100%;
+    width: 9.25rem;
 
     .arrow-top {
       width: 41px;
@@ -861,15 +869,6 @@ body {
     min-height: 20vh;
     padding: 1rem;
     flex-direction: column;
-
-    .title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .timeline {
-      font-size: 1rem;
-    }
   }
 
   .project {

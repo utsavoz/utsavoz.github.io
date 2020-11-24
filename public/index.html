@@ -64,13 +64,13 @@
     <div class="pointer pointer-inner"></div>
     <!-- <div class="pong-loader"></div> -->
     <main>
-      <div class="hero">
-        <div class="title">
-          Utsav Oza’s Portfolio
-          <!-- <span class="company">Creative Technologist</span> -->
-        </div>
-        <div class="timeline">©2020</div>
-      </div>
+      <nav>
+        <ul>
+          <a href="">Playground</a>
+          <a href="">About</a>
+        </ul>
+      </nav>
+      <div class="hero"></div>
       <div class="projects">
         <div class="project vans">
           <a href="../case-study-1" class="link">
@@ -127,6 +127,9 @@
                   /></video
                 ><video autoplay loop muted playsinline>
                   <source src="../img/index/vans_4.mp4" type="video/mp4" />
+                </video>
+                <video autoplay loop muted playsinline>
+                  <source src="../img/index/vans_1.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -188,6 +191,9 @@
                 ><video autoplay loop muted playsinline>
                   <source src="../img/index/estrella_4.mp4" type="video/mp4" />
                 </video>
+                <video autoplay loop muted playsinline>
+                  <source src="../img/index/estrella_1.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </a>
@@ -247,6 +253,9 @@
                   /></video
                 ><video autoplay loop muted playsinline>
                   <source src="../img/index/nomad_4.mp4" type="video/mp4" />
+                </video>
+                <video autoplay loop muted playsinline>
+                  <source src="../img/index/nomad_1.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -309,33 +318,18 @@
         Contact
       </a>
       <a href="#top" onclick="scrollToTop();return false" class="scroll-top">
-        <svg
-          id="Layer_1"
-          version="1.1"
-          viewBox="0 0 30.1 30.1"
-          x="0px"
-          y="0px"
-          xml:space="preserve"
-          class="arrow-top"
-        >
-          <polyline
-            fill="none"
-            points="6.9,1 29.1,1 29.1,23.3 "
-            stroke-width="2"
-          ></polyline>
-          <line
-            fill="none"
-            stroke-width="2"
-            x1="29.1"
-            x2="0.7"
-            y1="1"
-            y2="29.4"
-          ></line>
-        </svg>
+        <lottie-player
+          src="../img/animation/lf30_r6s65i6n.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
       </a>
     </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="../js/index.js"></script>
 
   <script src="../js/preload-it.min.js"></script>
