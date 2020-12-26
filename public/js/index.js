@@ -1,3 +1,5 @@
+
+
 // Custom Pointer Variables --- Starts Here
 const outerCursor = document.querySelector(".pointer-outer");
 const innerCursor = document.querySelector(".pointer-inner");
@@ -83,7 +85,7 @@ function init() {
 }
 
 function scrollToTop() {
-  let position = document.body.scrollTop || document.documentElement.scrollTop;
+  var position = document.body.scrollTop || document.documentElement.scrollTop;
   if (position) {
     window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
     scrollAnimation = setTimeout("scrollToTop()", 5);
