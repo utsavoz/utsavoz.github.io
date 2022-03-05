@@ -5,14 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/node-sass --watch public/scss -o public/css"
+    "build": "node_modules/.bin/node-sass --watch scss -o css"
   },
   "author": "Ankit Karnany <ankitkarnany@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@dogstudio/highway": "^2.2.1",
-    "express": "^4.17.1",
-    "node-sass": "^4.10.0",
-    "package.json": "^2.0.1"
+    "node-sass": "^7.0.1"
   }
 }
