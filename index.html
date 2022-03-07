@@ -32,14 +32,19 @@
     <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="Personal Portfolio Website" />
     <meta name="author" content="Utsav Oza" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNY21X1Y00"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CNY21X1Y00"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-CNY21X1Y00');
+      gtag("config", "G-CNY21X1Y00");
     </script>
 
     <title>Oz's Magnum Opus</title>
@@ -74,7 +79,7 @@
       </div>
       <div class="projects">
         <div class="project vans">
-          <a href="../case-study-1" class="link">
+          <a href="../case_studies/case-study-1.html" class="link">
             <div class="project-heading">
               <span class="serial">Interactive Installation</span>
               <h3 class="title">Vans - Timeless Classics</h3>
@@ -134,7 +139,7 @@
           </a>
         </div>
         <div class="project estrella">
-          <a href="/case-study-2" class="link">
+          <a href="../case_studies/case-study-2.html" class="link">
             <div class="project-heading">
               <span class="serial">Awareness Campaign</span>
               <h3 class="title">Estrella Damm</h3>
@@ -194,7 +199,7 @@
           </a>
         </div>
         <div class="project nomad">
-          <a href="/case-study-3" class="link">
+          <a href="../case_studies/case-study-3.html" class="link">
             <div class="project-heading">
               <span class="serial">Experience Design</span>
               <h3 class="title">Nomad Installation</h3>
@@ -301,7 +306,7 @@
       <a href="" class="logo">
         <img src="../img/logo.svg" alt="Utsav Oza's Logo" />
       </a>
-      <a href="/about" class="about"> About Me </a>
+      <a href="../case_studies/about.html" class="about"> About Me </a>
       <a
         href="mailto:utsavoza@gmail.com?subject=Oh! Hello Hello."
         target="_blank"
@@ -309,7 +314,7 @@
       >
         Contact
       </a>
-      <a href="#top" onclick="scrollToTop();return false" class="scroll-top">
+      <a href="#top" onclick="scrollToTop();" class="scroll-top">
         <svg
           id="Layer_1"
           version="1.1"
@@ -359,7 +364,7 @@
         "../img/index/nomad_3.mp4",
         "../img/index/nomad_4.mp4",
       ]);
-      
+
       if (localStorage.getItem("preloaded") != "si") {
         window.setTimeout(function () {
           document.querySelector("body").classList.remove("loading");
